@@ -1,6 +1,6 @@
 //
-//  XYSliderSetting.h
-//  XYSliderView
+//  YTSliderSetting.h
+//  YTSliderView
 //
 //  Created by yitezh on 2019/10/19.
 //  Copyright © 2019 yitezh. All rights reserved.
@@ -10,13 +10,13 @@
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, XYSliderLayoutDirection) {
-   XYSliderLayoutDirectionHorizontal  = 0,
-   XYSliderLayoutDirectionVertical,
+typedef NS_ENUM(NSUInteger, YTSliderLayoutDirection) {
+   YTSliderLayoutDirectionHorizontal  = 0,
+   YTSliderLayoutDirectionVertical,
 };
 
 
-@interface XYSliderSetting : NSObject
+@interface YTSliderSetting : NSObject
 //（默认）配置
 + (instancetype)defaultSetting ;
 //垂直配置
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSUInteger, XYSliderLayoutDirection) {
 //滑动过程是否展示进度
 @property (assign, nonatomic)BOOL shouldShowProgress;
 //布局方式（垂直或水平）
-@property (assign, nonatomic)XYSliderLayoutDirection  layoutDirection;
+@property (assign, nonatomic)YTSliderLayoutDirection  layoutDirection;
 //背景色
 @property (strong, nonatomic) UIColor *backgroundColor;
 //进度条颜色

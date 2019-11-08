@@ -6,8 +6,8 @@
 //  Copyright © 2019 yitezh. All rights reserved.
 //
 
-#import "YTEditSliderView.h"
-@interface YTEditSliderView() {
+#import "YTSliderView.h"
+@interface YTSliderView() {
     CGFloat max_thumbArea_v;
     CGFloat min_thumbArea_v;
     CGFloat thumbArea_length;
@@ -28,7 +28,7 @@
 
 @end
 
-@implementation YTEditSliderView
+@implementation YTSliderView
 
 - (instancetype)initWithFrame:(CGRect)frame setting:(YTSliderSetting *)setting {
     if(self == [super initWithFrame:frame]) {
